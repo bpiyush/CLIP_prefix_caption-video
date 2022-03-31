@@ -77,6 +77,7 @@ def show_single_image(
 
 def show_multiple_images(
         x: list,
+        caption="Sample caption",
         subtitles=None,
         n_cols=4,
         figsize=None,
@@ -116,6 +117,7 @@ def show_multiple_images(
             ax.set_title(subtitles[i], fontsize=subtitlesize)
 
     plt.suptitle(title, fontsize=titlesize)
+    fig.supxlabel(caption, fontstyle="italic", fontsize=0.9 * titlesize)
 
     if save:
         assert path is not None
