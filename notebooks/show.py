@@ -69,7 +69,7 @@ def show_single_image(
     ax.set_title(title, fontsize=16, fontweight="bold")
     ax.set_xticks([])
     ax.set_yticks([])
-    ax.set_xlabel(caption, fontsize=14)
+    ax.set_xlabel(caption, fontsize=14, fontstyle="italic")
 
     if show:
         plt.show()
